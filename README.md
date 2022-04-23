@@ -1,3 +1,10 @@
+  = Iphone SE
+sm=Iphone 6+
+md=Iphone X+
+lg=Tablet + (all tablets the same most likely)
+xl=Computer
+2xl=Computer larger (max)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
