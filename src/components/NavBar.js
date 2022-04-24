@@ -1,12 +1,13 @@
 import React from 'react'
 import * as AiIcons from "react-icons/ai";
+import "../App.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light py-4">
+    <nav className="navbar navbar-expand-lg navbar-light  py-4 fs-5">
       <div className="container-fluid  ">
         <a className="navbar-brand" href="index.html">
-          <AiIcons.AiFillHome className="d-inline-block align-text-top home-icon" />
+          <AiIcons.AiFillHome className="text-3xl xl:hidden" />
         </a>
         <button
           className="navbar-toggler custom-toggler"
@@ -20,9 +21,9 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link " aria-current="page" href="#">
                 Home
               </a>
             </li>
@@ -37,7 +38,7 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link teddst" href="#">
                 Hours
               </a>
             </li>

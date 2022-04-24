@@ -13,7 +13,7 @@ const TopNav = () => {
           <h1 className="text-[#EFD071] font-bold text-[18px] sm:uppercase md:text-[20px] lg:text-[36px]">
             Union High School Key Club
           </h1>
-          <h3 className="text-[15px] text-[#fff] font-bold md:text-[18px] lg:text-[28px]">
+          <h3 className=" text-[15px] text-[#fff] font-bold md:text-[18px] lg:text-[28px]">
             We care about our community.
           </h3>
         </div>
