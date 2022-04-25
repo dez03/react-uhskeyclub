@@ -4,7 +4,7 @@ import "../App.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light  py-4 fs-5">
+    <nav className="navbar navbar-expand-lg navbar-light py-4 fs-5" id="navbar">
       <div className="container-fluid  ">
         <a className="navbar-brand" href="index.html">
           <AiIcons.AiFillHome className="text-3xl xl:hidden" />

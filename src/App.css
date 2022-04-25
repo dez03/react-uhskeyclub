@@ -1,15 +1,14 @@
 .App {
   text-align: center;
 }
-
 .navbar{
-  position: sticky; 
+  position: sticky !important; 
+  
   width: 100%;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
-  
 }
 .home-icon{
   height: 35px;
@@ -27,14 +26,6 @@
 }
 .custom-toggler.navbar-toggler {
   border-color: rgb(0,0,0);
-}
-.navbar{
-  position: sticky; 
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
 }
 
 .bg-img{
