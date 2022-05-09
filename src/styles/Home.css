@@ -1,0 +1,18 @@
+.mission-container{
+  background-image: url(/src/assets/posts.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.fact-container{
+  background-image: url(/src/assets/fact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.article-container{
+  background-image: url(/src/assets/ourmissionbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
