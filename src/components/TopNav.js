@@ -1,7 +1,7 @@
 import React from 'react'
 import uhsseal from '../assets/uhsseal.png';
 
-const TopNav = () => {
+function TopNav() {
   return (
     <div className="h-[90px] bg-[#3F0B0A] pl-1 sm:pl-2 md:h-[100px] lg:h-[130px] ">
       <div className="flex items-center justify-left w-full h-[90px] md:h-[100px] lg:h-[130px]">

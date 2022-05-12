@@ -2,9 +2,9 @@ import React from 'react'
 import * as AiIcons from "react-icons/ai";
 import "../App.css";
 
-const NavBar = () => {
+function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light py-4 fs-5" id="navbar">
+    <nav className="navbar navbar-expand-lg navbar-light py-4 fs-5 absolute" id="navbar">
       <div className="container-fluid  ">
         <a className="navbar-brand" href="index.html">
           <AiIcons.AiFillHome className="text-3xl xl:hidden" />

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Hours = () => {
+function Hours() {
   return (
-    <div>Hours</div>
+    <div>Hours!!!</div>
   )
 }
 
