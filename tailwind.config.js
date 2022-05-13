@@ -5,7 +5,7 @@ module.exports = {
       'sm': "375px",
       'md': "410px",
       'lg': "765px",
-      'tb': "950px",
+      'tb': "850px",
       'xl': "1024px",
     },
   },

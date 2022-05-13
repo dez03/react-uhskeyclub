@@ -1,14 +1,16 @@
 import React from 'react'
 import * as AiIcons from "react-icons/ai";
 import "../App.css";
+import { NavLink } from "react-router-dom";
+
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light py-4 fs-5 absolute" id="navbar">
+    <nav className="navbar navbar-expand-lg navbar-light py-4 fs-5 z-10" id="navbar">
       <div className="container-fluid  ">
-        <a className="navbar-brand" href="index.html">
+        <NavLink className="navbar-brand" to='/'>
           <AiIcons.AiFillHome className="text-3xl xl:hidden" />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler custom-toggler"
           type="button"
@@ -23,19 +25,19 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <NavLink className="nav-link" aria-current="page" to="/calendar">
                 Calendar
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/districtproject">
                 District Project
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link teddst" href="#">
+              <NavLink className="nav-link" to='/hours'>
                 Hours
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a
