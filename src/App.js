@@ -2,6 +2,7 @@ import './App.css';
 import Home from "./pages/Home"
 import TopNav from "./components/TopNav";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer"
 import Hours from "./pages/Hours"
 import DistrictProject from "./pages/DistrictProject"
 import Calendar from "./pages/Calendar" 
@@ -17,6 +18,7 @@ function App() {
       <div className="App bg-[#F8F0E3]">
         <TopNav />
         <NavBar />
+
         <Routes>
           <Route path="/hours" element={<Hours />} />
           <Route path="/calendar" element={<Calendar />} />
@@ -24,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }

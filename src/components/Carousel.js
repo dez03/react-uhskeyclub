@@ -32,7 +32,7 @@ function ControlledCarousel() {
           alt="Second slide"
         />
         <Carousel.Caption className="flex h-full justify-center items-center">
-          <h1 className="text-[#fff] text-left text-3xl md:text-4xl tb:text-6xl font-bold">
+          <h1 className="text-[#fff]  text-3xl md:text-4xl tb:text-6xl font-bold">
             Committed to Serve
           </h1>
         </Carousel.Caption>
@@ -44,7 +44,7 @@ function ControlledCarousel() {
           alt="Third slide"
         />
         <Carousel.Caption className="flex h-full justify-center items-center">
-          <h1 className="text-[#fff] text-left text-3xl md:text-4xl tb:text-6xl font-bold">
+          <h1 className="text-[#fff] text-3xl md:text-4xl tb:text-6xl font-bold">
             Division 14
           </h1>
         </Carousel.Caption>
