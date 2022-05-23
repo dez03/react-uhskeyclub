@@ -82,7 +82,7 @@ function Home() {
                 <h3 className="text-xl">Nov-Dec 2021</h3>
                 <img src={require("../assets/article2.png")} className="h-64" />
               </div>
-              <div className="flex flex-col items-center hidden tb:block">
+              <div className="flex flex-col items-center justify-center hidden tb:block tb:mt-4">
                 <h3 className="text-xl">Aug-Sep 2021</h3>
                 <img src={require("../assets/article3.png")} className="h-64" />
               </div>

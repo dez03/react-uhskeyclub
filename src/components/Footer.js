@@ -1,115 +1,126 @@
 import React from 'react'
+import * as BsIcons from "react-icons/bs";
+import * as FiIcons from "react-icons/fi";
+import * as MdIcons from "react-icons/md";
+import KCWhite from "../assets/keyclubsealwhite.png";
+import UnionLogo from '../assets/union.png'
 
 function Footer() {
   return (
-    <footer className="bg-[#9e9e9e] flex flex-col items-center pt-2">
-      <div class="links-container text-center">
-        <div class="links-child">
-          <p class="footer-title font-bold">Newsletters</p>
-          <p class="footer-child last-child">Archives 20-21</p>
+    <footer className="bg-[#9e9e9e] flex flex-col items-center pt-4 ">
+      <div className="links-container text-center tb:px-16 w-100 tb:flex tb:flex-row tb:justify-start ">
+        <div className="links-child w-60 ">
+          <p className="footer-title text-xl font-bold mb-[.3em]">
+            Newsletters
+          </p>
+          <p className="footer-child mb-4 ">Archives 20-21</p>
         </div>
 
-        <div class="links-child text-center">
-          <p class="footer-title font-bold">Information</p>
-          <p class="footer-child">Our Mission</p>
-          <p class="footer-child">Advisors</p>
-          <p class="footer-child">22-23 Officers</p>
-          <p class="footer-child">22-23 Members</p>
-          <p class="footer-child">How To Pay Dues</p>
-          <p class="footer-child last-child">How to Join</p>
+        <div className="links-child text-center w-60 mx-8">
+          <p className="footer-title text-xl font-bold mb-[.3em]">
+            Information
+          </p>
+          <p className="footer-child ">Our Mission</p>
+          <p className="footer-child ">Advisors</p>
+          <p className="footer-child ">22-23 Officers</p>
+          <p className="footer-child ">22-23 Members</p>
+          <p className="footer-child ">How To Pay Dues</p>
+          <p className="footer-child mb-4 ">How to Join</p>
         </div>
 
-        <div class="links-child text-center">
-          <p class="footer-title font-bold">Featured</p>
-          <p class="footer-child">Gallary</p>
-          <p class="footer-child">Contact Us</p>
-          <p class="footer-child">Partners?</p>
-          <p class="footer-child last-child">Service Project?</p>
+        <div className="links-child text-center w-60">
+          <p className="footer-title text-xl font-bold mb-[.3em]">Featured</p>
+          <p className="footer-child">Gallary</p>
+          <p className="footer-child">Contact Us</p>
+          <p className="footer-child">Partners?</p>
+          <p className="footer-child mb-4">Service Project?</p>
         </div>
 
-        <div class="our-social-container">
-          <p class="footer-subtitle">Stay Social</p>
-          <span class="social-container">
-            <a href="https://www.instagram.com/uhskey.club/" target="_blank">
-              <img
-                src="/images/instagram.svg"
-                alt=""
-                class="instagramicon-ours"
-              />
-            </a>
-            <a href="https://www.remind.com/join/b78cb2" target="_blank">
-              <img src="/images/remind-app.png" alt="" class="remind" />
-            </a>
-          </span>
+        <div className="flex justify-end w-100">
+          <div className="our-social-container">
+            <p className="footer-subtitle font-bold text-2xl">Stay Social</p>
+            <span className="social-container flex justify-center">
+              <a href="https://www.instagram.com/uhskey.club/" target="_blank">
+                <BsIcons.BsInstagram className="mr-2 text-4xl no-underline text-[#000] hover:text-[#000] mb-4" />
+              </a>
+              <a href="https://www.instagram.com/uhskey.club/" target="_blank">
+                <FiIcons.FiTwitter className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000] mb-4" />
+              </a>
+            </span>
+          </div>
         </div>
       </div>
 
-      <div class="other-websites-container-master">
-        <p class="footer-subtitle">Other Official Websites</p>
-        <div class="other-websites-container">
-          <div class="other-websites-child">
+      <div className="other-websites-container-master ">
+        <p className="footer-subtitle font-bold text-xl">
+          Other Official Websites
+        </p>
+        <div className="other-websites-container text-center">
+          <div className="other-websites-child">
             <a
               href="https://www.kiwanis.org/"
               target="_blank"
-              class="footer-child"
+              className="footer-child text-[#000] hover:text-[#000] "
             >
               www.kiwanis.org
             </a>
-            <span class="social-container">
+            <span className="mt-2 social-container flex items-center justify-center">
               <a href="https://www.instagram.com/kiwanis/" target="_blank">
-                <img src="/images/instagram.svg" alt="" class="instagramicon" />
+                <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#000] hover:text-[#000]" />
               </a>
               <a href="mailto:memberservices@kiwanis.org">
-                <img src="/images/email.svg" class="email-icon" />
+                <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000]" />
               </a>
             </span>
           </div>
 
-          <div class="other-websites-child">
+          <div className="other-websites-child">
             <a
               href="https://www.keyclub.org/"
               target="_blank"
-              class="footer-child other-website"
+              className="footer-child other-website text-[#000] hover:text-[#000]"
             >
               www.keyclub.org
             </a>
-            <span class="social-container">
-              <a href="https://www.instagram.com/keyclubint/" target="_blank">
-                <img src="/images/instagram.svg" alt="" class="instagramicon" />
+            <span className="mt-2 social-container flex items-center justify-center">
+              <a href="https://www.instagram.com/kiwanis/" target="_blank">
+                <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#000] hover:text-[#000]" />
               </a>
-              <a href="mailto:keyclub@kiwanis.org">
-                <img src="/images/email.svg" class="email-icon" />
+              <a href="mailto:memberservices@kiwanis.org">
+                <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000]" />
               </a>
             </span>
           </div>
 
-          <div class="other-websites-child">
+          <div className="other-websites-child">
             <a
               href="https://www.njkeyclub.org/"
               target="_blank"
-              class="footer-child other-website"
+              className="mb-2 footer-child other-website text-[#000] hover:text-[#000]"
             >
               www.njkeyclub.org
             </a>
-            <span class="social-container">
-              <a href="https://www.instagram.com/njkeyclub/" target="_blank">
-                <img src="/images/instagram.svg" alt="" class="instagramicon" />
+            <span className="my-2 social-container flex items-center justify-center">
+              <a href="https://www.instagram.com/kiwanis/" target="_blank">
+                <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#000] hover:text-[#000]" />
               </a>
-              <a href="mailto:keyclub@kiwanis.org">
-                <img src="/images/email.svg" class="last-icon email-icon" />
+              <a href="mailto:memberservices@kiwanis.org">
+                <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000]" />
               </a>
             </span>
           </div>
         </div>
       </div>
 
-      {/* <div class="bottom-footer-container">
-      <div class="bottom-footer">
-        <img src="/images/union.png" alt="" class="unionlogo">
-        <img src="/images/keyclubsealwhite.png" alt="" class="KClogo">
+      <div className="bottom-footer-container bg-[#000] w-100 text-center justify-between">
+        <div className="bottom-footer flex mt-2 px-2 justify-between items-center">
+          <img src={UnionLogo} alt="" className="h-[50px]" />
+          <p className="bottom-footer-text text-[#fff] text-base mt-2">
+            Union High School Key Club © 2022 All Rights Reserved
+          </p>
+          <img src={KCWhite} className="h-[54px] " />
+        </div>
       </div>
-    <p class="bottom-footer-text">Union High School Key Club © 2022 All Rights Reserved</p>
-  </div> */}
     </footer>
   );
 }
