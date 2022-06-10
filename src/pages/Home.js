@@ -49,7 +49,9 @@ function Home() {
               developing the heart to serve. Union High School is apart of New
               Jersey Key Club District 14.
             </p>
-            <button className="btn btn-primary">Read More</button>
+            <NavLink aria-current="page" to="/mission">
+              <button className="btn btn-primary">Read More</button>
+            </NavLink>
           </div>
 
           <div className="fact-container h-96 w-full tb:w-[80%] xl:ml-2 py-4 px-8 my-2 px-0">
@@ -68,7 +70,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="tb:w-[80%] article-container mb-8 mt-2 py-4 px-8 w-full text-[#fff]">
+        <div className="tb:w-[80%] article-container mb-16 mt-2 py-4 px-8 w-full text-[#fff]">
           <div className="w-full">
             <h1 className="text-2xl md:text-4xl text-center w-full font-bold mb-7">
               Recent Newsletters
@@ -82,7 +84,7 @@ function Home() {
                 <h3 className="text-xl">Nov-Dec 2021</h3>
                 <img src={require("../assets/article2.png")} className="h-64" />
               </div>
-              <div className="flex flex-col items-center justify-center hidden tb:block tb:mt-4">
+              <div className="flex flex-col items-center justify-center hidden tb:block ">
                 <h3 className="text-xl">Aug-Sep 2021</h3>
                 <img src={require("../assets/article3.png")} className="h-64" />
               </div>

@@ -5,7 +5,8 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer"
 import Hours from "./pages/Hours"
 import DistrictProject from "./pages/DistrictProject"
-import Calendar from "./pages/Calendar" 
+import Calendar from "./pages/Calendar"
+import Mission from "./pages/Mission" 
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/hours" element={<Hours />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/districtproject" element={<DistrictProject />} />
+          <Route path="/mission" element={<Mission />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
