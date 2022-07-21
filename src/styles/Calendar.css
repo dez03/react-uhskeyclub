@@ -37,7 +37,8 @@
 
 .fc{
   background-color: #F8F0E3;
-  margin: 3em;
+  margin: 3em 3em 0em 3em;
+  padding-bottom: 3em;
 }
 
 .fc-daygrid-day-number{
@@ -50,4 +51,8 @@
   padding: 2px 4px;
   color: #000;
   text-decoration: none;
+}
+
+.fc-today-button{
+  text-transform: capitalize !important;
 }

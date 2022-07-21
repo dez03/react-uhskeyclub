@@ -6,9 +6,12 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light py-4 fs-5 z-10" id="navbar">
+    <nav
+      className="navbar navbar-expand-lg navbar-light py-4 fs-5 z-10"
+      id="navbar"
+    >
       <div className="container-fluid  ">
-        <NavLink className="navbar-brand" to='/'>
+        <NavLink className="navbar-brand" to="/">
           <AiIcons.AiFillHome className="text-3xl xl:hidden" />
         </NavLink>
         <button
@@ -35,7 +38,7 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to='/hours'>
+              <NavLink className="nav-link" to="/hours">
                 Hours
               </NavLink>
             </li>
@@ -80,9 +83,9 @@ function NavBar() {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className=" dropdown-item" to="/dues">
                     How to Pay Dues
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>

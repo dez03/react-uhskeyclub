@@ -5,8 +5,10 @@ const OfficerHours = () => {
     <iframe
       allowTransparency="true"
       src="https://script.google.com/macros/s/AKfycbyL-IdLbsClp4-3j9Mpb1wzke9LXAevpuVKcaKoImG3NOHlnwzSMxvzF-JTGT3ddJ7M/exec"
-      height="610"
+      height="670"
       width="100%"
+      scrolling="no"
+      className="overflow-hidden p-0 m-0 "
     />
   );
 }

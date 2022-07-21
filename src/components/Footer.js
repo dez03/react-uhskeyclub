@@ -7,7 +7,7 @@ import UnionLogo from '../assets/union.png'
 
 function Footer() {
   return (
-    <footer className="bg-[#9e9e9e] flex flex-col items-center pt-16 ">
+    <footer className="bg-[#131313] flex flex-col items-center pt-16 text-[#C0C2C3]">
       <div className="tb:flex justify-center">
         <div className="links-container tb:text-left text-center justify-center tb:flex tb:flex-row ">
           <div className="links-child tb:text-left text-center w-100 flex flex-col justify-center">
@@ -42,10 +42,10 @@ function Footer() {
             <p className="footer-subtitle font-bold text-xl">Stay Social</p>
             <span className="social-container flex justify-center">
               <a href="https://www.instagram.com/uhskey.club/" target="_blank">
-                <BsIcons.BsInstagram className="mr-2 text-4xl no-underline text-[#000] hover:text-[#000] mb-4" />
+                <BsIcons.BsInstagram className="mr-2 text-4xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3] mb-4" />
               </a>
               <a href="https://www.instagram.com/uhskey.club/" target="_blank">
-                <FiIcons.FiTwitter className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000] mb-4" />
+                <FiIcons.FiTwitter className="ml-2 text-4xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3] mb-4" />
               </a>
             </span>
           </div>
@@ -60,16 +60,16 @@ function Footer() {
               <a
                 href="https://www.kiwanis.org/"
                 target="_blank"
-                className="footer-child text-[#000] hover:text-[#000] "
+                className="footer-child text-[#C0C2C3] hover:text-[#C0C2C3] "
               >
                 www.kiwanis.org
               </a>
               <span className="mt-2 social-container flex items-center justify-center">
                 <a href="https://www.instagram.com/kiwanis/" target="_blank">
-                  <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#000] hover:text-[#000]" />
+                  <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3]" />
                 </a>
                 <a href="mailto:memberservices@kiwanis.org">
-                  <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000]" />
+                  <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3]" />
                 </a>
               </span>
             </div>
@@ -78,16 +78,16 @@ function Footer() {
               <a
                 href="https://www.keyclub.org/"
                 target="_blank"
-                className="footer-child other-website text-[#000] hover:text-[#000]"
+                className="footer-child other-website text-[#C0C2C3] hover:text-[#C0C2C3]"
               >
                 www.keyclub.org
               </a>
               <span className="mt-2 social-container flex items-center justify-center">
                 <a href="https://www.instagram.com/kiwanis/" target="_blank">
-                  <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#000] hover:text-[#000]" />
+                  <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3]" />
                 </a>
                 <a href="mailto:memberservices@kiwanis.org">
-                  <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000]" />
+                  <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3]" />
                 </a>
               </span>
             </div>
@@ -96,29 +96,35 @@ function Footer() {
               <a
                 href="https://www.njkeyclub.org/"
                 target="_blank"
-                className="mb-2 footer-child other-website text-[#000] hover:text-[#000]"
+                className="mb-2 footer-child other-website text-[#C0C2C3] hover:text-[#C0C2C3]"
               >
                 www.njkeyclub.org
               </a>
               <span className="my-2 social-container flex items-center justify-center">
                 <a href="https://www.instagram.com/kiwanis/" target="_blank">
-                  <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#000] hover:text-[#000]" />
+                  <BsIcons.BsInstagram className="mr-2 text-3xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3]" />
                 </a>
                 <a href="mailto:memberservices@kiwanis.org">
-                  <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#000] hover:text-[#000]" />
+                  <MdIcons.MdOutlineMailOutline className="ml-2 text-4xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3]" />
                 </a>
               </span>
             </div>
           </div>
         </div>
       </div>
-      <div className="bottom-footer-container bg-[#000] w-100 text-center justify-between">
+      <div className="bottom-footer-container bg-[#0a0a0a] w-100 text-center justify-between">
         <div className="bottom-footer flex mt-2 px-2 justify-between items-center">
           <img src={UnionLogo} alt="" className="h-[50px]" />
           <p className="bottom-footer-text text-[#fff] text-base mt-2">
-            Union High School Key Club © 2022 All Rights Reserved
+            Union High School Key Club © 2022 All Rights Reserved <br />
+            <span className="text-[#727272]">
+              Developed by: &nbsp;
+              <a className="text-reset fw-bold" href="https://beacons.ai/aviel">
+                Aviel Hernandez
+              </a>
+            </span>
           </p>
-          <img src={KCWhite} className="h-[54px] " />
+          <img src={KCWhite} className="h-[54px]" />
         </div>
       </div>
     </footer>

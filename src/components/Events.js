@@ -46,28 +46,36 @@
 
 // export default events;
 
+
+
+
+import * as ReactDOM from "react-dom";
+import React from "react";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Modal from "react-bootstrap/Modal";
+
+
 const events = [
-  { title: "Park Clean Up", start: "2022-06-01" 
+  { title: "UHSPTA Clothing Drive", start: "2022-05-07" },
+  { title: "Community Garden Work", start: "2022-05-14" },
+  {
+    title: "Women's Rights March ",
+    start: "2022-07-03",
   },
   {
-    groupId: "999",
-    title: "Repeating Event",
-    start: getDate("YEAR-MONTH-09T16:00:00+00:00"),
+    title: "Clark Nursing Home Summer Cards",
+    start: getDate("YEAR-06-19"),
+    end: getDate("YEAR-06-28"),
   },
   {
-    groupId: "999",
-    title: "Repeating Event",
-    start: getDate("YEAR-MONTH-16T16:00:00+00:00"),
+    title: "Pride Party Cleanup",
+    start: "2022-06-12",
   },
   {
-    title: "Conference",
-    start: "YEAR-MONTH-17",
-    end: getDate("YEAR-MONTH-19"),
-  },
-  {
-    title: "Meeting",
-    start: getDate("YEAR-MONTH-18T10:30:00+00:00"),
-    end: getDate("YEAR-MONTH-18T12:30:00+00:00"),
+    title: "CNH Bingo Event",
+    start: "2022-07-10",
+    url: "https://classroom.google.com/u/1/c/NDg3MjgzMjE4ODQz/m/NTI1NTY4MTEyNzMy/details",
   },
 ];
 

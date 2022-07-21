@@ -11,8 +11,8 @@ function TopNav() {
             className=" h-[70px] sm:h-[80px] md:h-[1=800px] lg:h-[110px] lg:px-4"
           />
         </NavLink>
-        <div className="flex flex-col items-start px-1 md:px-2  ">
-          <h1 className="text-[#EFD071] font-bold text-[18px] sm:uppercase md:text-[20px] lg:text-[36px]">
+        <div className="flex flex-col items-start text-left px-1 md:px-2  ">
+          <h1 className="text-[#EFD071] font-bold text-[17px] sm:uppercase md:text-[20px] lg:text-[36px]">
             Union High School Key Club
           </h1>
           <h3 className=" text-[15px] text-[#fff] font-bold md:text-[18px] lg:text-[28px]">

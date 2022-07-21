@@ -1,38 +1,37 @@
-// import React from "react";
-// import * as React from "react";
-// import Box from "@mui/material/Box";
-// import Tab from "@mui/material/Tab";
-// import TabContext from "@mui/lab/TabContext";
-// import TabList from "@mui/lab/TabList";
-// import TabPanel from "@mui/lab/TabPanel";
-// import OfficerHours from "../components/HoursSheets/OfficerHours";
-
 import * as React from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Alert } from "@mui/material";
-import { AlertTitle } from "@mui/material";
+import OfficerHours from "../components/HoursSheets/OfficerHours";
+import SeniorHours from "../components/HoursSheets/SeniorHours";
+import JuniorHours from "../components/HoursSheets/JuniorHours";
+import SophomoreHours from "../components/HoursSheets/SophomoreHours";
+import FreshmanHours from "../components/HoursSheets/FreshmanHours"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
+    <>
+      <div className="min-h-full">
+        <div
+          className="min-h-screen"
+          role="tabpanel"
+          hidden={value !== index}
+          id={`simple-tabpanel-${index}`}
+          aria-labelledby={`simple-tab-${index}`}
+          {...other}
+        >
+          {value === index && (
+            <Box sx={{ p: 3 }}>
+              <Typography>{children}</Typography>
+            </Box>
+          )}
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -58,6 +57,14 @@ export default function BasicTabs() {
 
   return (
     <>
+      <h6 className="mt-4 px-4">
+        The total amount of hours you have can be found here, if you have any
+        questions or concerns, please email&nbsp;
+        <a href="mailto:sneha.mexon@twpunionschools.org">
+          sneha.mexon@twpunionschools.org
+        </a>
+      </h6>
+      <hr />
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
@@ -69,7 +76,7 @@ export default function BasicTabs() {
             aria-label="scrollable centered force tabs example"
             centered
           >
-            <Tab label="Officer Hours" {...a11yProps(0)} className="bg-[red]" />
+            <Tab label="Officer Hours" {...a11yProps(0)} />
             <Tab label="Senior Hours" {...a11yProps(1)} />
             <Tab label="Junior Hours" {...a11yProps(1)} />
             <Tab label="Sophomore Hours" {...a11yProps(2)} />
@@ -77,27 +84,21 @@ export default function BasicTabs() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-          <iframe
-            allowTransparency="true"
-            src="https://script.google.com/macros/s/AKfycbyL-IdLbsClp4-3j9Mpb1wzke9LXAevpuVKcaKoImG3NOHlnwzSMxvzF-JTGT3ddJ7M/exec"
-            height="610"
-            width="100%"
-            scrolling="no"
-            className="overflow-hidden"
-          />
+          <OfficerHours />
         </TabPanel>
-        <TabPanel value={value} index={1}> {/* Senior Hours */}
-          <iframe
-            allowTransparency="true"
-            src="https://script.google.com/macros/s/AKfycbxX8ceM9ID4DtHDbLSEFo7W0jv-s-DoRo-kwABADVpSn8c7mTMO__nFBmCEW4GOyiNU/exec"
-            height="100%"
-            width="100%"
-            scrolling="no"
-            className="overflow-hidden "
-          />
+        <TabPanel value={value} index={1}>
+          {" "}
+          {/* Senior Hours */}
+          <SeniorHours />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <JuniorHours />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <SophomoreHours />
+        </TabPanel>
+        <TabPanel value={value} index={4}>
+          <FreshmanHours />
         </TabPanel>
       </Box>
     </>

@@ -28,20 +28,23 @@ function Home() {
             <FaIcons.FaRegCalendarAlt className="text-[55px] md:text-[65px]" />
             <h3 className="md:text-2xl md:mt-2">Calendar</h3>
           </NavLink>
-          <div className="galleryBtn Btn3 h-[110px] w-[212px] md:w-full md:h-[150px] hover:bg-[#f2f2f2] duration-300 shadow-md rounded-2xl bg-[#fff] flex items-center justify-center mb-[1.3em] text-lg flex-col">
+          <NavLink
+            to="/gallery"
+            className="no-underline text-[#000] hover:text-[#000] galleryBtn Btn3 h-[110px] w-[212px] md:w-full md:h-[150px] hover:bg-[#f2f2f2] duration-300 shadow-md rounded-2xl bg-[#fff] flex items-center justify-center mb-[1.3em] text-lg flex-col"
+          >
             <GrIcons.GrGallery className="text-[55px] md:text-[65px]" />
             <h3 className="md:text-2xl md:mt-2">Gallery</h3>
-          </div>
+          </NavLink>
         </div>
       </div>
 
       <div className="flex flex-col items-center w-full">
         <div className="flex flex-col xl:flex-row min-h-96 w-full justify-center items-end tb:items-center xl:px-[10%]">
-          <div className="xl:mr-2 h-96 mission-container w-full tb:w-[80%] p-8 pt-4  my-2">
+          <div className="xl:mr-2 h-full mission-container w-full tb:w-[80%] p-8 pt-4 my-2">
             <h1 className="text-2xl md:text-4xl text-center w-full font-bold mb-2">
               Who We Are
             </h1>
-            <p className="text-base md:text-lg text-left font-normal">
+            <p className="text-base md:text-xl text-left">
               Union High School Key Club is a student-led, high school
               organization. Our members make the world a better place through
               service. In doing so, we grow as individuals and as leaders by
@@ -61,12 +64,23 @@ function Home() {
             <em>
               <h4 className="text-base">2021-Present</h4>
             </em>
-            <h4 className="text-xl">Officers- 240.5 Hrs</h4>
-            <h4 className="text-xl">Seniors- 222 Hrs</h4>
-            <h4 className="text-xl">Juniors- 306.5 Hrs</h4>
-            <h4 className="text-xl">Sophmores- 165.5 Hrs</h4>
-            <h4 className="text-xl">Freshman- 201 Hrs</h4>
-            <button className="btn btn-primary">More Hours</button>
+            <h4 className="text-xl font-normal">
+              <strong>Officers- </strong>240.5 Hrs
+            </h4>
+            <h4 className="text-xl font-normal">
+              <strong>Seniors- </strong>222 Hrs
+            </h4>
+            <h4 className="text-xl font-normal">
+              <strong>Juniors-</strong> 306.5 Hrs
+            </h4>
+            <h4 className="text-xl font-normal">
+              <strong>Sophmores- </strong>165.5 Hrs
+            </h4>
+            <h4 className="text-xl font-normal">
+              {" "}
+              <strong>Freshman- </strong>201 Hrs
+            </h4>
+            <button className="btn btn-primary mt-2">More Hours</button>
           </div>
         </div>
 
