@@ -57,11 +57,11 @@ function NavBar() {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li>
+                {/* <li>
                   <NavLink className="dropdown-item" to="/mission">
                     Our Mission
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <a className="dropdown-item" href="#">
                     Advisors
@@ -73,18 +73,18 @@ function NavBar() {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className=" dropdown-item" to="/members">
                     22-23 Members
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    How to Join
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink className=" dropdown-item" to="/dues">
                     How to Pay Dues
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/faq">
+                    FAQ
                   </NavLink>
                 </li>
               </ul>

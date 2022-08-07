@@ -1,28 +1,42 @@
 import React from 'react'
-import ProjectImg from "../assets/districtproject.png";
-
-
+import Person from "../assets/person.svg"
+import Education from "../assets/educationday.png";
+import BookFair from "../assets/bookfair.png";
 
 
 function DistrictProject() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
-        <img src={ProjectImg} className="w-3/5" />
-        <p className="m-0 text-xl w-3/5">
-          The New Jersey District of Key Club International is proud to announce
-          that they have chosen Keeping the Garden State Green as the District
-          Project for the 2020-2021 service year. Throughout the world, there
-          are numerous environmental crises tremendously impacting the lives of
-          millions. It is crucial for humans to protect Earth's ecosystems as
-          well as take steps towards sustainable practices, so for this service
-          year, Union High School Key Club will be devoting our time and effort
-          to the well-being of our planet. Working together, we can greatly
-          impact the world! Read the District Project Guide to learn more about
-          the District Project and what you can do to help!
+      <div className="flex flex-col justify-center items-center lg:mx-12">
+        <h1 className="text-5xl mt-4">Education is the Key</h1>
+        <img src={Person} className="h-32 my-5" />
+        <p className="m-6 text-xl text-center ">
+          For the 2022-2023 Service Year, our District Project is{" "}
+          <strong>Education is the Key. </strong>
+          By focusing on education within the state of New Jersey, we can
+          contribute together to lowering the learning gap created by the
+          pandemic. Union High School Key Club, along with the other clubs in
+          the district, have made improving access to quality education one of
+          their prime goals. Below are some of the district project service
+          events we have done.
         </p>
+
+        <div className="m-8 flex flex-col lg:flex-row ">
+          <div className='lg:mr-8'>
+            <img src={Education} className="h-64 w-80 object-cover" />
+            <p>
+              National Public Education Poster Day- <br /> 7/29/22{" "}
+            </p>
+          </div>
+          <div>
+            <img src={BookFair} className="h-64 w-80 object-cover" />
+            <p className="m-0">
+              Burnet Middle School Book Fair- <br /> 5/24/22{" "}
+            </p>
+          </div>
+        </div>
+        <button className="btn btn-primary mb-20 ">More Photos</button>
       </div>
-      <button>District Project Guide</button>
     </>
   );
 }

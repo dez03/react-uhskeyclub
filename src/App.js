@@ -8,6 +8,7 @@ import Dues from "./pages/Dues"
 import DistrictProject from "./pages/DistrictProject"
 import Calendar from "./pages/Calendar"
 import Mission from "./pages/Mission" 
+import Members from "./pages/Members"
 import Gallery from "./pages/Gallery"
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
@@ -15,6 +16,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 // TODO make everything only get so big. and stay in the middle for larger screens
+// TODO add social icons to the top nav bar
 function App() {
   return (
     <Router>
@@ -29,6 +31,7 @@ function App() {
           <Route path="/mission" element={<Mission />} />
           <Route path="/" element={<Home />} />
           <Route path="/dues" element={<Dues />} />
+          <Route path="/members" element={<Members />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </div>

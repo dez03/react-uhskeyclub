@@ -47,14 +47,7 @@
 // export default events;
 
 
-
-
-import * as ReactDOM from "react-dom";
-import React from "react";
-import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Modal from "react-bootstrap/Modal";
-
 
 const events = [
   { title: "UHSPTA Clothing Drive", start: "2022-05-07" },
