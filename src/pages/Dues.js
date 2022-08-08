@@ -1,4 +1,5 @@
-import React from 'react'
+// This page is not going to be on the main website since I don't know what to put here, I might add it in the future, but for now, no.
+import React from "react";
 
 const Dues = () => {
   return (
@@ -31,6 +32,6 @@ const Dues = () => {
       </article>
     </>
   );
-}
+};
 
-export default Dues
+export default Dues;

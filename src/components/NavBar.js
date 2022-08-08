@@ -63,9 +63,9 @@ function NavBar() {
                   </NavLink>
                 </li> */}
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/advisors">
                     Advisors
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
@@ -78,9 +78,9 @@ function NavBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className=" dropdown-item" to="/dues">
+                  {/* <NavLink className=" dropdown-item" to="/dues">
                     How to Pay Dues
-                  </NavLink>
+                  </NavLink> */}
                 </li>
                 <li>
                   <NavLink className="dropdown-item" to="/faq">
@@ -105,9 +105,9 @@ function NavBar() {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Newsletter
-                  </a>
+                  <NavLink className="dropdown-item" to="/newsletters">
+                    Newsletters
+                  </NavLink>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">

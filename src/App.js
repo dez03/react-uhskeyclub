@@ -10,6 +10,8 @@ import Calendar from "./pages/Calendar"
 import Mission from "./pages/Mission" 
 import Members from "./pages/Members"
 import Gallery from "./pages/Gallery"
+import Newsletters from "./pages/Newsletters"
+import Advisors from "./pages/Advisors"
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
@@ -25,14 +27,16 @@ function App() {
         <NavBar />
 
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/hours" element={<Hours />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/districtproject" element={<DistrictProject />} />
           <Route path="/mission" element={<Mission />} />
-          <Route path="/" element={<Home />} />
           <Route path="/dues" element={<Dues />} />
           <Route path="/members" element={<Members />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/newsletters" element={<Newsletters />} />
+          <Route path="/advisors" element={<Advisors />} />
         </Routes>
       </div>
       <Footer />
