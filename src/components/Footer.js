@@ -31,7 +31,7 @@ function Footer() {
 
           <div className="links-child text-center tb:text-left tb:w-40 w-100 ">
             <p className="footer-title text-xl font-bold mb-[.3em]">Featured</p>
-            <p className="footer-child">Gallary</p>
+            <p className="footer-child">Gallery</p>
             <p className="footer-child">Contact Us</p>
             <p className="footer-child">Partners?</p>
             <p className="footer-child mb-4">Service Project?</p>
