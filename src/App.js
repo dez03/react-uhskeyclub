@@ -14,6 +14,8 @@ import Newsletters from "./pages/Newsletters"
 import Advisors from "./pages/Advisors"
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 
@@ -22,6 +24,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App bg-[#F8F0E3]">
         <TopNav />
         <NavBar />

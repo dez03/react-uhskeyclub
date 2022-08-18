@@ -50,8 +50,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const events = [
-  { title: "UHSPTA Clothing Drive", start: "2022-05-07" },
-  { title: "Community Garden Work", start: "2022-05-14" },
   {
     title: "Women's Rights March ",
     start: "2022-07-03",
@@ -69,6 +67,31 @@ const events = [
     title: "CNH Bingo Event",
     start: "2022-07-10",
     url: "https://classroom.google.com/u/1/c/NDg3MjgzMjE4ODQz/m/NTI1NTY4MTEyNzMy/details",
+  },
+  {
+    title: "Girls Night Out",
+    start: "2022-08-12",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTM4MzAzMzEyOTc3/details",
+  },
+  {
+    title: "Garden Work Party",
+    start: "2022-08-13",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTM4MzAzMjA5Nzgx/details",
+  },
+  {
+    title: "CNH Bingo Event",
+    start: "2022-08-14",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTM4Mjc2Mzk5NzAx/details",
+  },
+  {
+    title: "Food Pantry",
+    start: "2022-08-20",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTM4OTAyOTUxOTg4/details",
+  },
+  {
+    title: "CNH Bingo Event",
+    start: "2022-08-21",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTM4Mjc2Mzk5NzAx/details",
   },
 ];
 

@@ -8,9 +8,6 @@ import "@fullcalendar/timegrid/main.css";
 import "../styles/Calendar.css";
 
 import events from "../components/Events";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-
 
 export default function App() {
   return (

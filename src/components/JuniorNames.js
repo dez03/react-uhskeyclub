@@ -21,6 +21,7 @@ const JuniorNames = () => {
       <li>Gabriela Pereira</li>
       <li>Gia Patel</li>
       <li>Helen Burbano</li>
+      <li>Isabella Beaumont</li>
       <li>Jaden Thomas</li>
       <li>Jasline Hernandez</li>
       <li>Jayna Vidal</li>
