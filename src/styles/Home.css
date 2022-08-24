@@ -27,4 +27,5 @@
   align-items: center;
   object-fit: cover;
   min-height: 200px;
+  min-width: screen;
 }

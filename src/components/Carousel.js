@@ -1,5 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Bg1 from "../assets/homebg1.jpg";
+import Bg2 from "../assets/homebg2.jpg";
+import Bg3 from "../assets/homebg3.jpg";
 import React, { useState } from "react";
 import "../styles/Home.css";
 
@@ -15,7 +18,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="bg-img-c"
-          src={require("../assets/IMG_7143.jpg")}
+          src={Bg1}
           alt="First slide"
         />
         <Carousel.Caption className="flex h-full justify-center items-center">
@@ -28,7 +31,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="bg-img-c"
-          src={require("../assets/homebg2.png")}
+          src={Bg2}
           alt="Second slide"
         />
         <Carousel.Caption className="flex h-full justify-center items-center">
@@ -40,7 +43,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="bg-img-c"
-          src={require("../assets/IMG_7143.jpg")}
+          src={Bg3}
           alt="Third slide"
         />
         <Carousel.Caption className="flex h-full justify-center items-center">

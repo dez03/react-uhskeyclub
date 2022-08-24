@@ -12,7 +12,7 @@ export default function Advisors() {
                 className="absolute inset-x-0 top-0 h-1/2 bg-[#F8F0E3] xl:hidden"
               />
               <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 xl:p-0 xl:h-full">
-                <div className="rounded-xl shadow-xl overflow-hidden aspect-w-7 aspect-h-9 xl:aspect-none xl:h-full">
+                <div className="rounded-xl shadow-xl overflow-hidden aspect-w-7 aspect-h-9 xl:aspect-none xl:h-full"> 
                   <img
                     className="object-cover xl:h-full xl:w-full"
                     src={Advisor}

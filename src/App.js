@@ -12,6 +12,7 @@ import Members from "./pages/Members"
 import Gallery from "./pages/Gallery"
 import Newsletters from "./pages/Newsletters"
 import Advisors from "./pages/Advisors"
+import Officers from "./pages/Officers"
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop';
@@ -40,6 +41,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/newsletters" element={<Newsletters />} />
           <Route path="/advisors" element={<Advisors />} />
+          <Route path="/officers" element={<Officers />} />
         </Routes>
       </div>
       <Footer />

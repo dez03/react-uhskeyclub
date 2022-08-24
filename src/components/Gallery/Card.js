@@ -24,14 +24,14 @@ function Card({ person }) {
           src={person.imgPath}
           className="navi"
         />
-        {isHovering && (
+        {/* {isHovering && (
           <div
             className="infoi"
           >
             <h2>{person.eventName}</h2>
             <p>{person.date}</p>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
