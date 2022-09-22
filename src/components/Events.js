@@ -51,10 +51,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const events = [
   {
-    title: "Women's Rights March ",
-    start: "2022-07-03",
-  },
-  {
     title: "Clark Nursing Home Summer Cards",
     start: getDate("YEAR-06-19"),
     end: getDate("YEAR-06-28"),
@@ -92,6 +88,51 @@ const events = [
     title: "CNH Bingo Event",
     start: "2022-08-21",
     url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTM4Mjc2Mzk5NzAx/details",
+  },
+  {
+    title: "Movie Under The Stars",
+    start: "2022-09-09",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ1MjE0ODI1MDU4/details",
+  },
+  {
+    title: "Operation Clean Sweep",
+    start: "2022-09-10",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ0NjU0MDM2MzU4/details",
+  },
+  {
+    title: "Six Flags Fall Rally",
+    start: "2022-10-09",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ1MjQ4MjYwNjgz/details",
+  },
+  {
+    title: "T-Shirt Design Contest",
+    start: "2022-09-24",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ1MjIwMzU2OTE1/details",
+  },
+  {
+    title: "Football Concession Stands",
+    start: "2022-09-16",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ1NDYxODc3MDMy/details",
+  },
+  {
+    title: "Football Concession Stands",
+    start: "2022-10-07",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ1NDYxODc3MDMy/details",
+  },
+  {
+    title: "Football Concession Stands",
+    start: "2022-10-21",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ1NDYxODc3MDMy/details",
+  },
+  {
+    title: "Mayor's 5K Run/Walk",
+    start: "2022-09-25",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ2MDA3ODMyOTA1/details",
+  },
+  {
+    title: "Battle Hill Clothing Drive",
+    start: "2022-09-24",
+    url: "https://classroom.google.com/c/NDg3MjgzMjE4ODQz/m/NTQ4MzY1OTIxODYx/details",
   },
 ];
 

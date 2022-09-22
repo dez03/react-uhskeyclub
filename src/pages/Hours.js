@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from 'react'
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -8,29 +8,32 @@ import OfficerHours from "../components/HoursSheets/OfficerHours";
 import SeniorHours from "../components/HoursSheets/SeniorHours";
 import JuniorHours from "../components/HoursSheets/JuniorHours";
 import SophomoreHours from "../components/HoursSheets/SophomoreHours";
-import FreshmanHours from "../components/HoursSheets/FreshmanHours"
+import FreshmanHours from "../components/HoursSheets/FreshmanHours";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
     <>
-      <div className="min-h-full">
-        <div
-          className="min-h-screen"
-          role="tabpanel"
-          hidden={value !== index}
-          id={`simple-tabpanel-${index}`}
-          aria-labelledby={`simple-tab-${index}`}
-          {...other}
-        >
-          {value === index && (
-            <Box sx={{ p: 3 }}>
-              <Typography>{children}</Typography>
-            </Box>
-          )}
-        </div>
-      </div>
+     
+          <div className="min-h-full">
+            <div
+              className="min-h-screen"
+              role="tabpanel"
+              hidden={value !== index}
+              id={`simple-tabpanel-${index}`}
+              aria-labelledby={`simple-tab-${index}`}
+              {...other}
+            >
+              {value === index && (
+                <Box sx={{ p: 3 }}>
+                  <Typography>{children}</Typography>
+                </Box>
+              )}
+            </div>
+          </div>
+
     </>
   );
 }
@@ -57,60 +60,57 @@ export default function BasicTabs() {
 
   return (
     <>
-      <h6 className="mt-4 px-4">
-        The total amount of hours you have can be found here, if you have any
-        questions or concerns, please email&nbsp;
-        <a href="mailto:sneha.mexon@twpunionschools.org">
-          sneha.mexon@twpunionschools.org
-        </a>
-      </h6>
-      <hr />
-      <Box sx={{ width: "100%" }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            variant="scrollable"
-            scrollButtons
-            allowScrollButtonsMobile
-            aria-label="scrollable centered force tabs example"
-            centered
-          >
-            <Tab label="Officer Hours" {...a11yProps(0)} />
-            <Tab label="Senior Hours" {...a11yProps(1)} />
-            <Tab label="Junior Hours" {...a11yProps(1)} />
-            <Tab label="Sophomore Hours" {...a11yProps(2)} />
-            <Tab label="Freshman Hours" {...a11yProps(1)} />
-          </Tabs>
-        </Box>
-        <TabPanel value={value} index={0}>
-          <OfficerHours />
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          {" "}
-          {/* Senior Hours */}
-          <SeniorHours />
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <JuniorHours />
-        </TabPanel>
-        <TabPanel value={value} index={3}>
-          <SophomoreHours />
-        </TabPanel>
-        <TabPanel value={value} index={4}>
-          <FreshmanHours />
-        </TabPanel>
-      </Box>
+      
+          <h6 className="mt-4 px-4">
+            The total amount of hours you have can be found here, if you have
+            any questions or concerns, please email&nbsp;
+            <a href="mailto:sneha.mexon@twpunionschools.org">
+              sneha.mexon@twpunionschools.org
+            </a>
+          </h6>
+          <hr />
+          <Box sx={{ width: "100%" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                variant="scrollable"
+                scrollButtons
+                allowScrollButtonsMobile
+                aria-label="scrollable centered force tabs example"
+                centered
+              >
+                <Tab label="Officer Hours" {...a11yProps(0)} />
+                <Tab label="Senior Hours" {...a11yProps(1)} />
+                <Tab label="Junior Hours" {...a11yProps(1)} />
+                <Tab label="Sophomore Hours" {...a11yProps(2)} />
+                <Tab label="Freshman Hours" {...a11yProps(1)} />
+              </Tabs>
+            </Box>
+            <TabPanel value={value} index={0}>
+              <OfficerHours />
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              {" "}
+              {/* Senior Hours */}
+              <SeniorHours />
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+              <JuniorHours />
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+              <SophomoreHours />
+            </TabPanel>
+            <TabPanel value={value} index={4}>
+              <FreshmanHours />
+            </TabPanel>
+          </Box>
     </>
   );
 }
 
-
-
-
 // function Hours() {
 
-  
 //   return (
 //     <div className="bg-[#F8F0E3] p-4">
 //       <div>Hours!!!</div>

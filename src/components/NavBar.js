@@ -4,6 +4,7 @@ import "../App.css";
 import { NavLink } from "react-router-dom";
 
 
+
 function NavBar() {
   return (
     <nav
@@ -68,9 +69,9 @@ function NavBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/officers">
                     22-23 Officers
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink className=" dropdown-item" to="/members">
@@ -83,8 +84,13 @@ function NavBar() {
                   </NavLink> */}
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" to="/faq">
+                  {/* <NavLink className="dropdown-item" to="/faq">
                     FAQ
+                  </NavLink> */}
+                </li>
+                <li>
+                  <NavLink className="dropdown-item disabled" to="#">
+                    More Coming Soon!
                   </NavLink>
                 </li>
               </ul>
@@ -110,24 +116,30 @@ function NavBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/gallery">
                     Gallery
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  {/* <a className="dropdown-item" href="#">
                     Contact Us
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  {/* <a className="dropdown-item" href="#">
                     service project?
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Partners?
-                  </a>
+                  <NavLink className="dropdown-item" to="/partners">
+                    Partners
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="dropdown-item disabled" to="#">
+                    More Coming Soon!
+                  </NavLink>
                 </li>
               </ul>
             </li>

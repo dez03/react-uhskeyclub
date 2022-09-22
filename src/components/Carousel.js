@@ -16,38 +16,26 @@ function ControlledCarousel() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img
-          className="bg-img-c"
-          src={Bg1}
-          alt="First slide"
-        />
+        <img className="bg-img-c" src={Bg1} alt="First slide" />
         <Carousel.Caption className="flex h-full justify-center items-center">
-          <h1 className="text-[#fff] text-left text-3xl md:text-4xl tb:text-6xl font-bold">
+          <h1 className="text-[#fff] text-center text-3xl md:text-4xl tb:text-6xl font-bold">
+            Committed to Serve
+          </h1>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="bg-img-c" src={Bg2} alt="Second slide" />
+        <Carousel.Caption className="flex h-full justify-center items-center">
+          <h1 className="text-[#fff] text-center text-3xl md:text-4xl tb:text-6xl font-bold">
             Welcome to <br />
             UHS Key Club
           </h1>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="bg-img-c"
-          src={Bg2}
-          alt="Second slide"
-        />
+        <img className="bg-img-c" src={Bg3} alt="Third slide" />
         <Carousel.Caption className="flex h-full justify-center items-center">
-          <h1 className="text-[#fff]  text-3xl md:text-4xl tb:text-6xl font-bold">
-            Committed to Serve
-          </h1>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="bg-img-c"
-          src={Bg3}
-          alt="Third slide"
-        />
-        <Carousel.Caption className="flex h-full justify-center items-center">
-          <h1 className="text-[#fff] text-3xl md:text-4xl tb:text-6xl font-bold">
+          <h1 className="text-[#fff] text-center text-3xl md:text-4xl tb:text-6xl font-bold">
             Division 14
           </h1>
         </Carousel.Caption>

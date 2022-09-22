@@ -27,7 +27,7 @@ function Search({ details }) {
       person.name16.toLowerCase().includes(searchField.toLowerCase()) ||
       person.name17.toLowerCase().includes(searchField.toLowerCase())
     );
-  });
+  }); 
 
   const handleChange = (e) => {
     setSearchField(e.target.value);
@@ -45,14 +45,14 @@ function Search({ details }) {
     <section>
       <form className="TheForm">
         <input
-          className="TheInput"
+          className="TheInput mt-3"
           pattern=".*\S.*"
           type="search"
           required
           id="search"
           onChange={handleChange}
         />
-        <span class="caret"></span>
+        <span className="caret mb-3"></span>
       </form>
       {searchList()}
     </section>

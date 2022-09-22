@@ -9,3 +9,4 @@ function SearchList({ filteredPersons }) {
 }
 
 export default SearchList;
+ 

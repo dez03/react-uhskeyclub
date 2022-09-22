@@ -4,6 +4,8 @@ import * as FiIcons from "react-icons/fi";
 import * as MdIcons from "react-icons/md";
 import KCWhite from "../assets/keyclubsealwhite.png";
 import UnionLogo from '../assets/union.png'
+import "../App.css";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,27 +16,35 @@ function Footer() {
             <p className="footer-title text-xl font-bold mb-[.3em]">
               Newsletters
             </p>
-            <p className="footer-child tb:mb-64 ">Archives 20-21</p>
+            <NavLink className="no" to="/newsletters">
+              <p className="footer-child tb:pb-64 ">Newsletters</p>
+            </NavLink>
           </div>
 
           <div className="links-child tb:text-left text-center w-100">
             <p className="footer-title text-xl font-bold mb-[.3em] tb:px-16">
               Information
             </p>
-            <p className="footer-child">Our Mission</p>
-            <p className="footer-child">Advisors</p>
-            <p className="footer-child">22-23 Officers</p>
-            <p className="footer-child">22-23 Members</p>
-            <p className="footer-child">How To Pay Dues</p>
-            <p className="footer-child mb-4">How to Join</p>
+
+            <NavLink className="no" to="/advisors">
+              <p className="footer-child">Advisors</p>
+            </NavLink>
+            <NavLink className="no" to="/officers">
+              <p className="footer-child">22-23 Officers</p>
+            </NavLink>
+            <NavLink className=" no" to="/members">
+              <p className="footer-child">22-23 Members</p>
+            </NavLink>
           </div>
 
           <div className="links-child text-center tb:text-left tb:w-40 w-100 ">
             <p className="footer-title text-xl font-bold mb-[.3em]">Featured</p>
-            <p className="footer-child">Gallery</p>
-            <p className="footer-child">Contact Us</p>
-            <p className="footer-child">Partners?</p>
-            <p className="footer-child mb-4">Service Project?</p>
+            <NavLink className="no" to="/gallery">
+              <p className="footer-child">Gallery</p>
+            </NavLink>
+            <NavLink className="no" to="/partners">
+              <p className="footer-child">Partners</p>
+            </NavLink>
           </div>
         </div>
         <div className="flex justify-center w-100 tb:w-40 ">
@@ -44,9 +54,9 @@ function Footer() {
               <a href="https://www.instagram.com/uhskey.club/" target="_blank">
                 <BsIcons.BsInstagram className="mr-2 text-4xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3] mb-4" />
               </a>
-              <a href="https://www.instagram.com/uhskey.club/" target="_blank">
+              {/* <a href="https://www.instagram.com/uhskey.club/" target="_blank">
                 <FiIcons.FiTwitter className="ml-2 text-4xl no-underline text-[#C0C2C3] hover:text-[#C0C2C3] mb-4" />
-              </a>
+              </a> */}
             </span>
           </div>
         </div>

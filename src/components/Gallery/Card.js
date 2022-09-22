@@ -3,26 +3,13 @@ import "./SearchStyles.css";
 
 function Card({ person }) {
 
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
-
-
   return (
     <div className="overhead">
       <div className="containeryaherd">
         <img
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
           alt={person.eventName}
           src={person.imgPath}
-          className="navi"
+          className="navi h-full w-full object-cover object-center lg:h-full lg:w-full"
         />
         {/* {isHovering && (
           <div
