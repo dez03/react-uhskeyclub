@@ -41,16 +41,49 @@ function Search({ details }) {
     );
   }
 
+  const handleKeyPress = (event) => {
+    if (event.keyCode === 13) {
+      handleChange(event);
+    }
+  };
+const handleSubmit = (event) => {
+  event.preventDefault();
+};
+
+const [inputFocus, setInputFocus] = useState(false);
+const [showPlaceholder, setShowPlaceholder] = useState(false);
+
+const handleFocus = () => {
+  setInputFocus(true);
+  setTimeout(() => {
+    setShowPlaceholder(true);
+  }, 300);
+};
+
+const handleBlur = () => {
+  setShowPlaceholder(false);
+  setInputFocus(false);
+};
+
+
+
   return (
     <section>
-      <form className="TheForm">
+      <form className="TheForm bouncy " onSubmit={handleSubmit}>
         <input
-          className="TheInput mt-3"
+          className="TheInput  mt-3"
           pattern=".*\S.*"
           type="search"
           required
           id="search"
           onChange={handleChange}
+          onKeyUp={handleKeyPress}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          placeholder={
+            showPlaceholder ? "Try 'Aviel' or 'Jeremiah' or 'Meya'" : ""
+          }
+          style={{ padding: "1" }}
         />
         <span className="caret mb-3"></span>
       </form>

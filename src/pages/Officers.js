@@ -44,12 +44,6 @@ const people = [
     imageUrl: Female,
     bio: "",
   },
-  {
-    name: "Jasline Hernandez",
-    role: "Editor",
-    imageUrl: Female,
-    bio: "",
-  },
 ];
 
 export default function Example() {

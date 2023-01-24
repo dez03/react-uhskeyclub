@@ -88,11 +88,11 @@ function NavBar() {
                     FAQ
                   </NavLink> */}
                 </li>
-                <li>
+                {/* <li>
                   <NavLink className="dropdown-item disabled" to="#">
                     More Coming Soon!
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -136,11 +136,11 @@ function NavBar() {
                   </NavLink>
                 </li>
 
-                <li>
+                {/* <li>
                   <NavLink className="dropdown-item disabled" to="#">
                     More Coming Soon!
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </li>
           </ul>
