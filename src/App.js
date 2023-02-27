@@ -10,6 +10,7 @@ import Calendar from "./pages/Calendar"
 import Mission from "./pages/Mission" 
 import Members from "./pages/Members"
 import Gallery from "./pages/Gallery"
+import Faq from "./pages/Faq";
 import Newsletters from "./pages/Newsletters"
 import Advisors from "./pages/Advisors"
 import Officers from "./pages/Officers"
@@ -51,6 +52,7 @@ function App() {
             <Route path="/advisors" element={<Advisors />} />
             <Route path="/officers" element={<Officers />} />
             <Route path="/partners" element={<Partners />} />
+            <Route path="/faq" element={<Faq />} />
             <Route
               path="/ArchivedNewsletters"
               element={<ArchivedNewsletters />}

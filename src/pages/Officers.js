@@ -1,10 +1,9 @@
 import Presient from "../assets/jer.jpg";
-import VP from "../assets/meya.jpg";
-import Female from "../assets/female.png"
-import Tres from "../assets/angel.JPG"
-import Hist from '../assets/ana.jpg'
-import Web from "../assets/aviel.jpg"
-
+import vp from "../assets/meya.jpg";
+import Secra from "../assets/sneha.jpg";
+import Tres from "../assets/angel.JPG";
+import Hist from "../assets/ana.jpg";
+import Web from "../assets/aviel.jpg";
 
 const people = [
   {
@@ -16,8 +15,14 @@ const people = [
   {
     name: "Meya Alverna",
     role: "Vice President",
-    imageUrl: VP,
+    imageUrl: vp,
     bio: "Hey Guys, my name is Meya Alverna, I am a senior, and I am this year’s Key Club Vice President! I have been in the key club since my freshman year and I am so excited to help lead the club this year. Some of my hobbies are video games, doing hair and nails, and karaoke. To me, key club is a fun and easy way for high school students to help their community. For this upcoming year, I hope to find new community service opportunities and get more people involved in Key Club!",
+  },
+  {
+    name: "Sneha Mexon",
+    role: "Secretary",
+    imageUrl: Secra,
+    bio: "Hi Everyone! My name is Sneha Mexon and I am the Key Club Secretary for the 2022-2023 service year. I am so excited to serve as your Key Club Secretary. I initially joined Key Club at the beginning of my Freshman year. I remember one of my first in-person events was at the Food Truck Festival, I genuinely felt very good about serving my Community and left that event with a passion for service. I am honored to have this leadership position and hope to do my best along with the other officers to have a profound impact on Key Club!",
   },
   {
     name: "Angelica Monderin",
@@ -38,12 +43,6 @@ const people = [
     imageUrl: Web,
     bio: "As your web master, I aim to create an efficient and intuitive website so UHS Key Club members can quickly retrieve the information they want. I have made this website as efficient as I possibly could. Here, you check how many service hours you have as the spreadsheet is live and updates automatically. You can look at the calendar to see what events we are hosting and when. On the gallery page you will find pictures of all service events we have hosted, as well as a cool search bar feature where you can search your name and only the pictures you're in show up! Every month there will be a newsletter uploaded to the newsletters page. There you can stay updated with current news regarding the outcome of past events, UHS Key Club member of the month, upcoming events, and more! I have also hidden some easter eggs throughout this website and plan on adding more. Some are easier to find then others, but there are plenty, so have fun looking for them! If you notice any bugs, inaccurate information, or have a suggestion, please do not hesitate to email me anytime.",
   },
-  {
-    name: "Sneha Mexon",
-    role: "Secretary",
-    imageUrl: Female,
-    bio: "",
-  },
 ];
 
 export default function Example() {
@@ -54,7 +53,12 @@ export default function Example() {
           <h2 className="text-3xl font-bold tracking-tight lg:text-4xl l">
             Meet our leadership
           </h2>
-
+          <hr></hr>
+          <h1>Lieutenant Governor - Division 14</h1>
+          <h3>Krystlove Yeboah</h3>
+          <a href="mailto:kyeboah@njkeyclub.org">
+            <h5>kyeboah@njkeyclub.org</h5>
+          </a>
           <ul
             role="list"
             className="pr-8 tb:pr-0   space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0"

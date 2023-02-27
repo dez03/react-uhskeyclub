@@ -70,7 +70,7 @@ function Home() {
                   <h4 className="text-base">2021-Present</h4>
                 </em>
                 <h4 className="text-xl font-normal">
-                  <strong>Officers- </strong>97 Hours
+                  <strong>Officers- </strong>170.5 Hours
                 </h4>
                 <h4 className="text-xl font-normal">
                   <strong>Seniors- </strong> 203 Hours

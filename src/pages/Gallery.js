@@ -8,6 +8,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import GalleryFull from "../components/Gallery/GalleryFull"
+import Popup from "../components/Popup"
 
 
 function TabPanel(props) {
@@ -57,6 +58,7 @@ export default function BasicTabs() {
 
   return (
     <>
+    <Popup></Popup>
       <h1 className="my-4 px-4">Gallery</h1>
       <p>
         If you're in a picture and it doesn't come up with a search, please

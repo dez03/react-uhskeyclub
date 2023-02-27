@@ -35,6 +35,9 @@ function Footer() {
             <NavLink className=" no" to="/members">
               <p className="footer-child">22-23 Members</p>
             </NavLink>
+            <NavLink className=" no" to="/faq">
+              <p className="footer-child">FAQ and Club Info</p>
+            </NavLink>
           </div>
 
           <div className="links-child text-center tb:text-left tb:w-40 w-100 ">
@@ -126,7 +129,7 @@ function Footer() {
         <div className="bottom-footer flex mt-2 px-2 justify-between items-center">
           <img src={UnionLogo} alt="" className="h-[50px]" />
           <p className="bottom-footer-text text-[#fff] text-base mt-2">
-            Union High School Key Club © 2022 All Rights Reserved <br />
+            Union High School Key Club © 2023 All Rights Reserved <br />
             <span className="text-[#727272]">
               Developed by: &nbsp;
               <a className="text-reset fw-bold" href="https://beacons.ai/aviel">

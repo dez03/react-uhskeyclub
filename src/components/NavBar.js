@@ -84,9 +84,9 @@ function NavBar() {
                   </NavLink> */}
                 </li>
                 <li>
-                  {/* <NavLink className="dropdown-item" to="/faq">
-                    FAQ
-                  </NavLink> */}
+                  <NavLink className="dropdown-item" to="/faq">
+                    FAQ & Club Info
+                  </NavLink>
                 </li>
                 {/* <li>
                   <NavLink className="dropdown-item disabled" to="#">

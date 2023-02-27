@@ -28,7 +28,7 @@ const Dues = () => {
       <h1>Registration</h1>
       <h4>Create User</h4>
       <article className="prose lg:prose-xl">
-        1) To set up an account, go to www.payschoolscentral.com and click{" "}
+        1) To set up an account, go to www.payschoolscentral.com and click REGISTER
       </article>
     </>
   );
